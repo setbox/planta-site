@@ -73,3 +73,19 @@ body { background: #FFFFFF; color: #1F2430; }
 .viagem { left: var(--inicio); width: var(--duracao); }
 
 input[type="range"] { accent-color: #2A6E0B; }
+
+.mov body > section:first-of-type { overflow: hidden; }
+.mov .revela { opacity: 0; transform: translateY(18px); transition: opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) var(--atraso, 0ms), transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) var(--atraso, 0ms); }
+.mov .revela.visivel { opacity: 1; transform: none; }
+.mov .faixa { transform: scaleX(0); transform-origin: left; transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) calc(var(--atraso, 0ms) + 150ms); }
+.mov .visivel .faixa { transform: none; }
+.mov .revela .line-through { text-decoration-color: transparent; transition: text-decoration-color 0.5s ease calc(var(--atraso, 0ms) + 500ms); }
+.mov .revela.visivel .line-through { text-decoration-color: currentColor; }
+.mov .ficha-etapas li, .mov .ficha-etapas li::before { transition: color 0.4s ease, background-color 0.4s ease; }
+.mov [data-ficha-ramo].troca [data-ficha] { animation: troca 0.45s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.mov #como figure .flex-1 > div { will-change: translate; }
+
+@keyframes troca {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
