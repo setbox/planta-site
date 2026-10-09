@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://useplanta.com.br/sitemap.xml

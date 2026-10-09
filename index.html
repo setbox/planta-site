@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planta - O ERP que fala a língua do seu ramo</title>
+  <meta name="description" content="Planta é um ERP com a base que toda empresa precisa e uma parte feita para o seu ramo. Sai a planilha, o documento solto e a agenda no grupo de mensagens.">
+  <link rel="canonical" href="https://useplanta.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://useplanta.com.br/">
+  <meta property="og:site_name" content="Planta">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Planta - O ERP que fala a língua do seu ramo">
+  <meta property="og:description" content="Planta é um ERP com a base que toda empresa precisa e uma parte feita para o seu ramo. Sai a planilha, o documento solto e a agenda no grupo de mensagens.">
+  <meta property="og:image" content="https://useplanta.com.br/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Planta - O ERP que fala a língua do seu ramo">
+  <meta name="twitter:description" content="Planta é um ERP com a base que toda empresa precisa e uma parte feita para o seu ramo. Sai a planilha, o documento solto e a agenda no grupo de mensagens.">
+  <meta name="twitter:image" content="https://useplanta.com.br/assets/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#2A6E0B">
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#12161C">
+  <link rel="preload" href="assets/fonts/exo2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="font-sans antialiased text-base leading-[1.55]">
+
+  <nav id="site-nav" class="fixed inset-x-0 top-0 z-50" aria-label="Principal" data-nav-sobre-hero style="--nav-p: 0; --nav-t: 0; --nav-fg: rgb(232, 235, 230)">
+    <div class="nav-camada-vidro absolute inset-0 -z-10 pointer-events-none" aria-hidden="true"></div>
+    <div class="nav-camada-solida absolute inset-0 -z-10 pointer-events-none" aria-hidden="true"></div>
+    <div class="max-w-site mx-auto px-6 flex items-center justify-between gap-4 min-h-[72px]">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="relative block w-8 h-8" aria-hidden="true">
+          <svg class="marca-simbolo-claro absolute inset-0" width="32" height="32" viewBox="0 0 64 64"><path d="M22 58C22 44 23 29 26 15L31 16C29 29 29 44 29 58Z" fill="#6ECB3B"/><path d="M27 14C41 12 52 20 50 29C48 36 38 40 30 37C38 34 43 28 41 23C39 18 34 15 27 14Z" fill="#6ECB3B"/></svg>
+          <svg class="marca-simbolo-escuro absolute inset-0" width="32" height="32" viewBox="0 0 64 64"><path d="M22 58C22 44 23 29 26 15L31 16C29 29 29 44 29 58Z" fill="#3FA110"/><path d="M27 14C41 12 52 20 50 29C48 36 38 40 30 37C38 34 43 28 41 23C39 18 34 15 27 14Z" fill="#3FA110"/></svg>
+        </span>
+        <span class="font-titulo font-bold text-2xl tracking-[-0.03em]">Planta</span>
+      </a>
+      <div class="flex items-center gap-2 md:gap-7">
+        <a href="#sai-de-cena" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde">Produto</a>
+        <a href="#como" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde">Como é feito</a>
+        <a href="#ramos" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde">Ramos</a>
+        <button type="button" id="nav-toggle" class="md:hidden inline-flex items-center justify-center w-11 h-11" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect y="3" width="20" height="2" rx="1" fill="currentColor"/><rect y="9" width="20" height="2" rx="1" fill="currentColor"/><rect y="15" width="20" height="2" rx="1" fill="currentColor"/></svg>
+        </button>
+        <a href="#contato" class="inline-flex items-center min-h-11 px-[18px] rounded-md bg-verde-btn text-white font-bold hover:bg-verde-tinta whitespace-nowrap">Agendar conversa</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="max-w-site mx-auto px-6 flex flex-col pt-1 pb-3 border-t border-divisor" hidden>
+      <a href="#sai-de-cena" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta">Produto</a>
+      <a href="#como" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta">Como é feito</a>
+      <a href="#ramos" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta">Ramos</a>
+    </div>
+  </nav>
+
+  <section class="grade-noite flex flex-col min-h-[min(100svh,1000px)] pt-[72px] text-noite-tinta" data-nav-hero>
+    <div class="max-w-site mx-auto px-6 w-full flex-1 flex flex-col">
+      <div id="topo" class="flex-1 grid grid-cols-[repeat(auto-fit,minmax(min(100%,480px),1fr))] items-center content-center gap-14 pt-14 pb-16 md:pt-[88px] md:pb-24">
+        <div class="flex flex-col gap-7">
+          <h1 class="font-titulo font-semibold text-[clamp(42px,5.6vw,72px)] leading-[1.02] tracking-[-0.025em] [text-wrap:balance]">O ERP que fala a língua do seu ramo.</h1>
+          <p class="max-w-[34em] text-[19px] leading-[1.6] text-noite-lead">Planta começa pelo que toda empresa tem: unidades, pessoas, clientes, fornecedores, estoque e financeiro. Por cima, a parte feita para o seu ramo, com os nomes, as regras e as contas da sua operação.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="#contato" class="inline-flex items-center justify-center min-h-12 px-[22px] rounded-md font-bold bg-verde-btn text-white hover:bg-verde-tinta">Agendar conversa</a>
+            <a href="#como" class="inline-flex items-center justify-center min-h-12 px-[22px] rounded-md font-bold border border-noite-cont text-noite-tinta hover:border-noite-tinta hover:text-white">Ver como é feito</a>
+          </div>
+          <a href="https://setbox.com.br" target="_blank" rel="noopener" class="mt-3 md:mt-5 self-start inline-flex items-center gap-2.5 min-h-11 text-[13px] text-noite-sec hover:text-white">Um produto <img src="assets/setbox-lockup-escuro.svg" alt="Setbox" width="68" height="20" class="block h-5 w-auto"></a>
+        </div>
+
+        <figure class="flex flex-col gap-3.5">
+          <div class="flex flex-wrap gap-1.5" role="group" aria-label="Escolha um ramo">
+            <button type="button" data-aba-ramo="geral" aria-pressed="true" class="min-h-11 px-4 rounded-md border border-noite-cont text-noite-tinta font-bold text-sm aria-pressed:bg-noite-tinta aria-pressed:border-noite-tinta aria-pressed:text-noite">Geral</button>
+            <button type="button" data-aba-ramo="concreteira" aria-pressed="false" class="min-h-11 px-4 rounded-md border border-noite-cont text-noite-tinta font-bold text-sm aria-pressed:bg-noite-tinta aria-pressed:border-noite-tinta aria-pressed:text-noite">Concreteira</button>
+            <button type="button" data-aba-ramo="serraria" aria-pressed="false" class="min-h-11 px-4 rounded-md border border-noite-cont text-noite-tinta font-bold text-sm aria-pressed:bg-noite-tinta aria-pressed:border-noite-tinta aria-pressed:text-noite">Serraria</button>
+          </div>
+          <div class="bg-noite-sup border border-noite-div rounded-lg overflow-hidden" data-ficha-ramo aria-live="polite">
+            <div class="flex flex-wrap justify-between items-center gap-2 px-5 py-4 border-b border-noite-div text-[13px]">
+              <div class="font-mono"><span data-ficha="doc">PEDIDO</span> <strong class="font-semibold" data-ficha="num">004812</strong></div>
+              <div class="ponto inline-flex self-start items-center gap-2 px-2.5 py-1 rounded-full text-[13px] font-bold bg-[#111E2B] text-[#7FB6E8] [--ponto:#6BA8E0]" data-ficha="status">Em expedição</div>
+            </div>
+            <div class="grid grid-cols-3 gap-px bg-noite-div border-b border-noite-div">
+              <div class="min-w-0 bg-noite-sup py-3.5 px-3 md:px-5"><div class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario text-noite-sec" data-ficha="qtdRot">Quantidade</div><div class="font-mono tabular-nums text-[clamp(16px,4vw,22px)] break-words" data-ficha="qtd">120 un</div></div>
+              <div class="min-w-0 bg-noite-sup py-3.5 px-3 md:px-5"><div class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario text-noite-sec">Unidade</div><div class="font-mono tabular-nums text-[clamp(16px,4vw,22px)]">U-01</div></div>
+              <div class="min-w-0 bg-noite-sup py-3.5 px-3 md:px-5"><div class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario text-noite-sec" data-ficha="localRot">Destino</div><div class="font-mono tabular-nums text-[clamp(16px,4vw,22px)] break-words" data-ficha="local">Cliente</div></div>
+            </div>
+            <ol class="ficha-etapas grid grid-cols-4 gap-2 px-5 pt-6 pb-7 text-[13px] font-bold text-noite-sec">
+              <li class="feita flex flex-col gap-2.5" data-etapa>Pedido</li>
+              <li class="feita flex flex-col gap-2.5" data-etapa>Separação</li>
+              <li class="atual flex flex-col gap-2.5" data-etapa>Expedição</li>
+              <li class="flex flex-col gap-2.5" data-etapa>Entrega</li>
+            </ol>
+          </div>
+          <figcaption class="font-mono text-xs text-noite-sec">Mesma base, vocabulário de cada ramo. Dados ilustrativos.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="sai-de-cena" class="py-20 md:py-28">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-12">
+      <div class="flex flex-col gap-[18px] max-w-[760px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">01</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">O que sai de cena</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">A operação já existe. Ela só está espalhada.</h2>
+        <p class="text-lg text-secundario">Planilha na nuvem, proposta no editor de texto, documento no bloco de papel e combinado no grupo de mensagens. Cada um guarda um pedaço, nenhum conversa com o outro.</p>
+      </div>
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,260px),1fr))] border-t border-divisor">
+        <div class="flex flex-col gap-3.5 py-7 pr-6 border-b border-divisor">
+          <div class="font-mono text-sm text-contorno line-through">CONTROLE_GERAL_v7.xlsx</div>
+          <div class="font-titulo font-semibold text-xl">Cada movimento registrado</div>
+          <p class="text-secundario">Entrada, saída, produção e venda, com autor, hora e unidade.</p>
+        </div>
+        <div class="flex flex-col gap-3.5 py-7 pr-6 border-b border-divisor">
+          <div class="font-mono text-sm text-contorno line-through">Proposta_final_v3.docx</div>
+          <div class="font-titulo font-semibold text-xl">Preço calculado, não digitado</div>
+          <p class="text-secundario">Custos com vigência, margem visível antes de fechar o orçamento.</p>
+        </div>
+        <div class="flex flex-col gap-3.5 py-7 pr-6 border-b border-divisor">
+          <div class="font-mono text-sm text-contorno line-through">Bloco de papel numerado</div>
+          <div class="font-titulo font-semibold text-xl">Documento que sai do sistema</div>
+          <p class="text-secundario">Numeração própria, emitido a partir do que de fato aconteceu.</p>
+        </div>
+        <div class="flex flex-col gap-3.5 py-7 pr-6 border-b border-divisor">
+          <div class="font-mono text-sm text-contorno line-through">Grupo "Programação"</div>
+          <div class="font-titulo font-semibold text-xl">Agenda no lugar certo</div>
+          <p class="text-secundario">Entregas, tarefas e manutenções com responsável e prazo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como" class="py-20 md:py-28 bg-superficie border-y border-divisor">
+    <div class="max-w-site mx-auto px-6 grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] gap-14 items-center">
+      <div class="flex flex-col gap-[18px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">02</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">Como é feito</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">O comum já está pronto. O seu ramo, a gente especializa.</h2>
+        <p class="text-lg text-secundario">Cadastros, estoque, compras, vendas e financeiro são a mesma base para todos os clientes. Você não paga para alguém reinventar o básico.</p>
+        <p class="text-lg text-secundario">O esforço vai para o que é só do seu negócio: os nomes, as regras e as contas do seu ramo. Quando a empresa cresce, liga mais uma parte em vez de trocar de sistema.</p>
+      </div>
+      <figure class="flex gap-4">
+        <div class="corte-cota flex flex-col items-center w-7 font-mono text-[11px] text-secundario" aria-hidden="true"><span class="py-2 whitespace-nowrap [writing-mode:vertical-rl] rotate-180">BASE + RAMO</span></div>
+        <div class="flex-1 min-w-0 flex flex-col gap-2.5">
+          <div class="flex flex-col gap-3 p-5 rounded-lg border border-verde bg-white">
+            <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario text-verde-tinta">Feito para o seu ramo</span>
+            <div class="flex flex-wrap gap-2 text-sm font-bold">
+              <span class="px-3 py-1.5 rounded-md bg-ok-fundo border border-verde text-ok-tinta">Concreteira</span>
+              <span class="px-3 py-1.5 rounded-md bg-ok-fundo border border-verde text-ok-tinta">Serraria</span>
+              <span class="px-3 py-1.5 rounded-md border border-dashed border-contorno text-secundario font-semibold">Seu ramo</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 p-5 rounded-lg border border-divisor bg-white">
+            <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario">Você liga quando precisar</span>
+            <div class="flex flex-wrap gap-2 text-sm font-semibold">
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Vendas</span>
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Compras</span>
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Produção</span>
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Financeiro</span>
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Frota</span>
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Manutenção</span>
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Qualidade</span>
+              <span class="px-3 py-1.5 rounded-md border border-divisor">Fiscal</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 p-5 rounded-lg bg-grafite text-noite-tinta">
+            <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario text-noite-sec">Pronto em toda empresa</span>
+            <div class="flex flex-wrap gap-2 text-sm font-semibold">
+              <span class="px-3 py-1.5 rounded-md border border-[#3A4250]">Unidades</span>
+              <span class="px-3 py-1.5 rounded-md border border-[#3A4250]">Pessoas e acessos</span>
+              <span class="px-3 py-1.5 rounded-md border border-[#3A4250]">Clientes</span>
+              <span class="px-3 py-1.5 rounded-md border border-[#3A4250]">Fornecedores</span>
+              <span class="px-3 py-1.5 rounded-md border border-[#3A4250]">Estoque</span>
+              <span class="px-3 py-1.5 rounded-md border border-[#3A4250]">Auditoria</span>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="ramos" class="py-20 md:py-28">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-12">
+      <div class="flex flex-col gap-[18px] max-w-[760px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">03</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">Ramos</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">Cada ramo com o que importa para ele.</h2>
+        <p class="text-lg text-secundario">A base é a mesma para todos. Em cima dela, cada ramo ganha o que faz diferença no dia a dia dele.</p>
+      </div>
+      <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,320px),1fr))]">
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white gap-4">
+          <span class="inline-block px-2.5 py-1 rounded-md bg-ok-fundo border border-verde text-ok-tinta font-bold text-[13px] self-start">Concreteira</span>
+          <h3 class="font-titulo font-semibold text-[22px]">Usinas de concreto</h3>
+          <ul class="list-disc pl-[18px] flex flex-col gap-1.5 text-secundario">
+            <li>O concreto sai na especificação, mesmo com a areia molhada</li>
+            <li>A frota do dia cabe numa tela, sem grupo de mensagens</li>
+            <li>A taxa de espera chega pronta para cobrar</li>
+          </ul>
+          <a href="concreteiras.html" class="mt-auto inline-flex items-center min-h-11 font-bold text-verde-tinta underline hover:text-grafite">Ver como funciona numa concreteira</a>
+        </article>
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white gap-4">
+          <span class="inline-block px-2.5 py-1 rounded-md bg-ok-fundo border border-verde text-ok-tinta font-bold text-[13px] self-start">Serraria</span>
+          <h3 class="font-titulo font-semibold text-[22px]">Serrarias e madeireiras</h3>
+          <ul class="list-disc pl-[18px] flex flex-col gap-1.5 text-secundario">
+            <li>Cada tora com cubagem e origem, sem bloco de papel</li>
+            <li>Quanto cada lote rendeu e quanto virou perda</li>
+            <li>Subproduto com peso e preço, não mais por fora</li>
+          </ul>
+          <a href="serrarias.html" class="mt-auto inline-flex items-center min-h-11 font-bold text-verde-tinta underline hover:text-grafite">Ver como funciona numa serraria</a>
+        </article>
+        <article class="flex flex-col gap-4 p-7 border border-dashed border-contorno rounded-lg bg-superficie">
+          <span class="self-start inline-block px-2.5 py-1 rounded-md border border-dashed border-contorno text-neutro-tinta font-bold text-[13px]">Seu ramo</span>
+          <h3 class="font-titulo font-semibold text-[22px]">Indústria, distribuição, serviço</h3>
+          <p class="text-secundario">Estoque, compras, vendas, produção e financeiro já estão prontos. O que é só do seu negócio, a gente desenha com você, em cima da mesma base.</p>
+          <a href="#contato" class="mt-auto inline-flex items-center min-h-11 font-bold text-verde-tinta underline hover:text-grafite">Contar como é a sua operação</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="primeiro" class="py-20 md:py-28">
+    <div class="max-w-site mx-auto px-6 grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] gap-14 items-start">
+      <div class="flex flex-col gap-[18px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">04</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">Ainda não atendemos o seu ramo?</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">Seja o primeiro. Isso é vantagem.</h2>
+        <p class="text-lg text-secundario">Você não está bancando um sistema que vai ficar para trás. Está ajudando a decidir como um produto vai funcionar para empresas como a sua.</p>
+      </div>
+      <ol class="flex flex-col border-t border-grafite">
+        <li class="grid grid-cols-[56px_minmax(0,1fr)] gap-4 py-6 border-b border-divisor">
+          <span class="font-mono text-[13px] font-semibold text-verde-tinta">A</span>
+          <span class="flex flex-col gap-1.5"><span class="font-titulo font-semibold text-[21px]">Você influencia o rumo</span><span class="text-secundario">O que a sua operação pede entra no produto. As regras do seu ramo são desenhadas com quem vive elas.</span></span>
+        </li>
+        <li class="grid grid-cols-[56px_minmax(0,1fr)] gap-4 py-6 border-b border-divisor">
+          <span class="font-mono text-[13px] font-semibold text-verde-tinta">B</span>
+          <span class="flex flex-col gap-1.5"><span class="font-titulo font-semibold text-[21px]">Melhora sem projeto novo</span><span class="text-secundario">A base evolui com o que vem de todos os clientes, e você recebe essas melhorias como parte da mensalidade.</span></span>
+        </li>
+        <li class="grid grid-cols-[56px_minmax(0,1fr)] gap-4 py-6 border-b border-divisor">
+          <span class="font-mono text-[13px] font-semibold text-verde-tinta">C</span>
+          <span class="flex flex-col gap-1.5"><span class="font-titulo font-semibold text-[21px]">Não fica órfão</span><span class="text-secundario">Não é um sistema feito sob encomenda que para quando o projeto acaba. É um produto mantido, com hospedagem, suporte e evolução.</span></span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-28 bg-superficie border-y border-divisor">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-12">
+      <div class="flex flex-col gap-[18px] max-w-[760px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">05</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">Em qualquer ramo</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">Três coisas que vêm de fábrica.</h2>
+      </div>
+      <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,300px),1fr))]">
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+          <div class="flex flex-col gap-1 font-mono text-sm">
+            <span class="text-contorno line-through">Lançamento 1.284 · valor errado</span>
+            <span>Estorno 1.291 · motivo registrado</span>
+          </div>
+          <h3 class="font-titulo font-semibold text-[21px]">Nada se apaga</h3>
+          <p class="text-secundario">Todo lançamento guarda quem fez, quando e em qual unidade. Correção é estorno com justificativa, nunca borracha.</p>
+        </article>
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+          <div class="flex gap-2 font-mono text-sm">
+            <span class="flex-1 px-2.5 py-2 border border-divisor rounded-md"><small class="block text-[11px] text-secundario">U-01 · saldo</small>1.240</span>
+            <span class="flex-1 px-2.5 py-2 border border-divisor rounded-md"><small class="block text-[11px] text-secundario">U-02 · saldo</small>380</span>
+          </div>
+          <h3 class="font-titulo font-semibold text-[21px]">Várias unidades, saldos separados</h3>
+          <p class="text-secundario">Cada filial tem estoque, equipe e frota. A diretoria vê o conjunto; cada operador vê a sua.</p>
+        </article>
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+          <div class="ponto inline-flex self-start items-center gap-2 px-2.5 py-1 rounded-full text-[13px] font-bold px-3 py-1.5 text-sm bg-info-fundo text-info-tinta [--ponto:#1B62A8]">Sem rede · 2 orçamentos na fila</div>
+          <h3 class="font-titulo font-semibold text-[21px]">Venda fora do escritório</h3>
+          <p class="text-secundario">O vendedor orça no tablet, no cliente. Se a conexão cair, o orçamento espera e sobe quando o sinal voltar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="py-20 md:py-28" hidden>
+    <div class="max-w-site mx-auto px-6">
+      <figure class="grid gap-10 items-end pt-10 border-t border-grafite grid-cols-[repeat(auto-fit,minmax(min(100%,380px),1fr))]">
+        <blockquote class="font-titulo font-medium text-[clamp(26px,2.8vw,36px)] leading-[1.25] tracking-[-0.015em] [text-wrap:balance]"></blockquote>
+        <figcaption class="flex flex-col gap-1 text-[15px] text-secundario"><strong class="text-grafite"></strong><span></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contato" class="py-20 md:py-28 bg-noite text-noite-tinta">
+    <div class="max-w-site mx-auto px-6 grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] gap-14 items-start">
+      <div class="flex flex-col gap-[18px]">
+        <div class="text-xs font-bold tracking-[0.14em] uppercase text-secundario text-verde-claro">Próximo passo</div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">Vamos desenhar a sua operação.</h2>
+        <p class="text-lg text-noite-lead">Uma conversa para entender suas planilhas, suas unidades e o jeito do seu ramo. Você sai com um mapa do que já está pronto e do que construímos com você.</p>
+      </div>
+      <div class="flex flex-col gap-4 p-7 bg-noite-sup border border-noite-div rounded-lg">
+        <a href="mailto:contato@setbox.com.br?subject=Planta%20-%20agendar%20conversa" class="inline-flex items-center justify-center min-h-12 px-[22px] rounded-md font-bold bg-verde-btn text-white hover:bg-verde-tinta">Agendar conversa por e-mail</a>
+        <a href="https://wa.me/5541999073688?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Planta%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener" class="inline-flex items-center justify-center min-h-12 px-[22px] rounded-md font-bold border border-noite-cont text-noite-tinta hover:border-noite-tinta hover:text-white">Conversar no WhatsApp</a>
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 pt-2 text-[13px] text-noite-sec">
+          <a href="mailto:contato@setbox.com.br" class="hover:text-white">contato@setbox.com.br</a>
+          <a href="https://wa.me/5541999073688" target="_blank" rel="noopener" class="font-mono hover:text-white">(41) 99907-3688</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-noite-rodape text-noite-sec border-t border-noite-div">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-10 pt-14 pb-10">
+      <div class="grid gap-8 grid-cols-2 md:grid-cols-4">
+        <div class="col-span-2 md:col-span-1"><a href="index.html" class="inline-block"><img src="assets/planta-lockup-escuro.svg" alt="Planta" width="173" height="44" class="block h-11 w-auto"></a></div>
+        <div>
+          <p class="mb-3 text-sm font-bold text-noite-tinta">Produto</p>
+          <ul class="flex flex-col gap-1 text-sm">
+            <li><a href="index.html#como" class="inline-flex items-center min-h-8 hover:text-white">Como é feito</a></li>
+            <li><a href="index.html#ramos" class="inline-flex items-center min-h-8 hover:text-white">Ramos</a></li>
+            <li><a href="index.html#contato" class="inline-flex items-center min-h-8 hover:text-white">Agendar conversa</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-3 text-sm font-bold text-noite-tinta">Ramos</p>
+          <ul class="flex flex-col gap-1 text-sm">
+            <li><a href="concreteiras.html" class="inline-flex items-center min-h-8 hover:text-white">Para concreteiras</a></li>
+            <li><a href="serrarias.html" class="inline-flex items-center min-h-8 hover:text-white">Para serrarias</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-3 text-sm font-bold text-noite-tinta">Empresa</p>
+          <ul class="flex flex-col gap-1 text-sm">
+            <li><a href="https://setbox.com.br" target="_blank" rel="noopener" class="inline-flex items-center min-h-8 hover:text-white">Setbox</a></li>
+            <li><a href="mailto:contato@setbox.com.br" class="inline-flex items-center min-h-8 hover:text-white">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-6 border-t border-noite-div">
+        <a href="https://setbox.com.br" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 min-h-11 text-[13px] hover:text-white self-start md:self-auto">Um produto <img src="assets/setbox-lockup-escuro.svg" alt="Setbox" width="68" height="20" class="block h-5 w-auto"></a>
+        <p class="text-[13px] leading-[1.7] md:text-right">© 2026 Setbox Serviços Digitais · SETBOX INFORMATICA LTDA · CNPJ <span class="font-mono text-xs">08.889.601/0001-09</span><br>Av. Carneiro Leão, 563 - Zona 01, Maringá / PR - 87014-010</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

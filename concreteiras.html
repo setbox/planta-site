@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planta para concreteiras - Da proposta ao romaneio</title>
+  <meta name="description" content="Orçamento no tablet, programação por caminhão, traço corrigido pela umidade, romaneio com pesos efetivos e taxa de espera calculada. Planta para usinas de concreto.">
+  <link rel="canonical" href="https://useplanta.com.br/concreteiras.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://useplanta.com.br/concreteiras.html">
+  <meta property="og:site_name" content="Planta">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Planta para concreteiras - Da proposta ao romaneio">
+  <meta property="og:description" content="Orçamento no tablet, programação por caminhão, traço corrigido pela umidade, romaneio com pesos efetivos e taxa de espera calculada. Planta para usinas de concreto.">
+  <meta property="og:image" content="https://useplanta.com.br/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Planta para concreteiras - Da proposta ao romaneio">
+  <meta name="twitter:description" content="Orçamento no tablet, programação por caminhão, traço corrigido pela umidade, romaneio com pesos efetivos e taxa de espera calculada. Planta para usinas de concreto.">
+  <meta name="twitter:image" content="https://useplanta.com.br/assets/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#2A6E0B">
+  <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="preload" href="assets/fonts/exo2.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="font-sans antialiased text-base leading-[1.55]">
+
+  <nav id="site-nav" class="fixed inset-x-0 top-0 z-50" aria-label="Principal">
+    <div class="nav-camada-vidro absolute inset-0 -z-10 pointer-events-none" aria-hidden="true"></div>
+    <div class="nav-camada-solida absolute inset-0 -z-10 pointer-events-none" aria-hidden="true"></div>
+    <div class="max-w-site mx-auto px-6 flex items-center justify-between gap-4 min-h-[72px]">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="relative block w-8 h-8" aria-hidden="true">
+          <svg class="marca-simbolo-claro absolute inset-0" width="32" height="32" viewBox="0 0 64 64"><path d="M22 58C22 44 23 29 26 15L31 16C29 29 29 44 29 58Z" fill="#6ECB3B"/><path d="M27 14C41 12 52 20 50 29C48 36 38 40 30 37C38 34 43 28 41 23C39 18 34 15 27 14Z" fill="#6ECB3B"/></svg>
+          <svg class="marca-simbolo-escuro absolute inset-0" width="32" height="32" viewBox="0 0 64 64"><path d="M22 58C22 44 23 29 26 15L31 16C29 29 29 44 29 58Z" fill="#3FA110"/><path d="M27 14C41 12 52 20 50 29C48 36 38 40 30 37C38 34 43 28 41 23C39 18 34 15 27 14Z" fill="#3FA110"/></svg>
+        </span>
+        <span class="font-titulo font-bold text-2xl tracking-[-0.03em]">Planta</span>
+      </a>
+      <div class="flex items-center gap-2 md:gap-7">
+        <a href="index.html" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde">Produto</a>
+        <a href="concreteiras.html" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde" aria-current="page">Concreteira</a>
+        <a href="serrarias.html" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde">Serraria</a>
+        <button type="button" id="nav-toggle" class="md:hidden inline-flex items-center justify-center w-11 h-11" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect y="3" width="20" height="2" rx="1" fill="currentColor"/><rect y="9" width="20" height="2" rx="1" fill="currentColor"/><rect y="15" width="20" height="2" rx="1" fill="currentColor"/></svg>
+        </button>
+        <a href="index.html#contato" class="inline-flex items-center min-h-11 px-[18px] rounded-md bg-verde-btn text-white font-bold hover:bg-verde-tinta whitespace-nowrap">Agendar conversa</a>
+      </div>
+    </div>
+    <div id="nav-menu" class="max-w-site mx-auto px-6 flex flex-col pt-1 pb-3 border-t border-divisor" hidden>
+      <a href="index.html" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta">Produto</a>
+      <a href="concreteiras.html" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta" aria-current="page">Concreteira</a>
+      <a href="serrarias.html" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta">Serraria</a>
+    </div>
+  </nav>
+
+  <section class="grade-clara flex flex-col justify-center min-h-[min(100svh,1000px)] pt-40 pb-[72px] border-b border-divisor">
+    <div class="max-w-site mx-auto px-6 w-full flex flex-col gap-[26px]">
+      <div class="flex flex-wrap items-center gap-3"><span class="inline-block px-2.5 py-1 rounded-md bg-ok-fundo border border-verde text-ok-tinta font-bold text-[13px]">Concreteira</span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">Planta para usinas de concreto</span></div>
+      <h1 class="font-titulo font-semibold text-[clamp(40px,5.2vw,66px)] leading-[1.04] tracking-[-0.025em] max-w-[15em] [text-wrap:balance]">Da proposta ao romaneio, sem perder o traço.</h1>
+      <p class="max-w-[40em] text-[19px] leading-[1.6] text-secundario">Para usinas de concreto que vendem no campo, programam por caminhão e precisam provar o que foi entregue. Orçamento, pedido, agenda, dosagem, romaneio e nota no mesmo registro.</p>
+    </div>
+  </section>
+
+  <section id="fluxo" class="py-20 md:py-[104px]">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-12">
+      <div class="flex flex-col gap-[18px] max-w-[760px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">01</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">O ciclo de uma carga</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">Seis etapas, um registro só.</h2>
+      </div>
+      <ol class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,180px),1fr))] border-t-2 border-grafite">
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E1</span><span class="font-titulo font-semibold text-[19px]">Orçamento</span><span class="text-[15px] text-secundario">No tablet, com preço calculado e margem mínima conferida.</span></li>
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E2</span><span class="font-titulo font-semibold text-[19px]">Pedido</span><span class="text-[15px] text-secundario">Congela as condições aceitas e controla o saldo a entregar.</span></li>
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E3</span><span class="font-titulo font-semibold text-[19px]">Programação</span><span class="text-[15px] text-secundario">Divide o volume em viagens pela capacidade de cada caminhão.</span></li>
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E4</span><span class="font-titulo font-semibold text-[19px]">Dosagem</span><span class="text-[15px] text-secundario">Traço versionado, corrigido pela umidade medida no dia.</span></li>
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E5</span><span class="font-titulo font-semibold text-[19px]">Romaneio</span><span class="text-[15px] text-secundario">Pesos efetivos e hora de saída carimbados na emissão.</span></li>
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E6</span><span class="font-titulo font-semibold text-[19px]">Nota fiscal</span><span class="text-[15px] text-secundario">Fatura o volume entregue, produto e serviço separados.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="conta" class="py-20 md:py-[104px] bg-superficie border-y border-divisor">
+    <div class="max-w-site mx-auto px-6 grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] gap-14 items-start">
+      <div class="flex flex-col gap-[18px] max-w-[760px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">02</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">A conta que a planilha não faz</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">Areia molhada muda a receita.</h2>
+        <p class="text-lg text-secundario">A água que vem na areia desconta da água do traço, e o peso da areia sobe na mesma medida. Sem esse ajuste a carga sai fora de especificação. No Planta, o ensaio de umidade entra na conta de cada carga.</p>
+        <p class="text-secundario">Arraste a umidade e veja a balança mudar.</p>
+      </div>
+      <div class="calc border border-divisor rounded-lg overflow-hidden bg-white">
+        <div class="flex flex-col gap-3.5 p-6 border-b border-divisor">
+          <div class="flex justify-between items-baseline gap-3">
+            <label for="umidade" class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario">Umidade da areia</label>
+            <output for="umidade" class="font-mono text-[32px] font-semibold tabular-nums"><span data-calc="umidade">6,2</span> %</output>
+          </div>
+          <input id="umidade" type="range" min="0" max="10" step="0.1" value="6.2" class="w-full min-h-11">
+        </div>
+        <table class="w-full border-collapse text-[15px]">
+          <caption class="text-left px-6 py-3.5 text-[13px] text-secundario bg-superficie border-b border-divisor">Traço ilustrativo, por m³</caption>
+          <thead>
+            <tr class="text-[11px] font-bold tracking-[0.14em] uppercase text-secundario">
+              <th scope="col" class="text-left px-6 py-3 border-b border-divisor">Item</th>
+              <th scope="col" class="text-right px-4 py-3 border-b border-divisor">Receita</th>
+              <th scope="col" class="text-right px-6 py-3 border-b border-divisor">Na balança</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row" class="text-left px-6 py-3.5 border-b border-divisor font-semibold">Areia</th><td class="text-right px-6 py-3.5 border-b border-divisor font-mono tabular-nums px-4 text-secundario">820 kg</td><td class="text-right px-6 py-3.5 border-b border-divisor font-mono tabular-nums font-semibold"><span data-calc="areia">871</span> kg</td></tr>
+            <tr><th scope="row" class="text-left px-6 py-3.5 border-b border-divisor font-semibold">Água adicionada</th><td class="text-right px-6 py-3.5 border-b border-divisor font-mono tabular-nums px-4 text-secundario">185 L</td><td class="text-right px-6 py-3.5 border-b border-divisor font-mono tabular-nums font-semibold"><span data-calc="agua">134</span> L</td></tr>
+            <tr><th scope="row" class="text-left px-6 py-3.5 border-b border-divisor font-semibold border-b-0">Água vinda da areia</th><td class="text-right px-6 py-3.5 border-b border-divisor font-mono tabular-nums border-b-0 px-4 text-secundario">-</td><td class="text-right px-6 py-3.5 border-b border-divisor font-mono tabular-nums border-b-0 font-semibold text-verde-tinta"><span data-calc="livre">51</span> L</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-[104px]">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-10">
+      <div class="flex flex-wrap justify-between items-end gap-6">
+        <div class="flex flex-col gap-[18px] max-w-[680px]">
+          <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">03</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">A agenda do dia</span></div>
+          <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">O grupo do WhatsApp vira uma régua.</h2>
+          <p class="text-lg text-secundario">Cada caminhão numa linha, cada viagem com saída, trajeto e descarga. O que está para estourar a janela aparece antes de estourar.</p>
+        </div>
+        <div class="font-mono text-[11px] text-secundario">U-01 · QUI 08/10 · ILUSTRATIVO</div>
+      </div>
+      <div class="overflow-x-auto border border-divisor rounded-lg bg-white">
+        <div class="min-w-[760px]">
+          <div class="grid grid-cols-[140px_repeat(8,minmax(0,1fr))] border-b border-divisor font-mono text-xs text-secundario">
+            <div class="py-3 px-4 text-[11px] font-bold tracking-[0.14em] uppercase text-secundario font-sans">Caminhão</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">06:00</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">07:00</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">08:00</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">09:00</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">10:00</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">11:00</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">12:00</div>
+            <div class="py-3 pl-1.5 border-l border-divisor">13:00</div>
+          </div>
+          <div class="grid grid-cols-[140px_1fr] items-center border-b border-divisor last:border-b-0">
+            <div class="p-4 font-mono text-sm">BT-01</div>
+            <div class="relative h-14">
+              <div class="viagem absolute top-3.5 h-7 flex items-center px-2 rounded border text-xs font-bold whitespace-nowrap overflow-hidden bg-ok-fundo border-ok-ponto text-ok-tinta" style="--inicio: 20%; --duracao: 18%">8 m³ · entregue</div>
+              <div class="viagem absolute top-3.5 h-7 flex items-center px-2 rounded border text-xs font-bold whitespace-nowrap overflow-hidden bg-info-fundo border-info-ponto text-info-tinta" style="--inicio: 50%; --duracao: 19%">8 m³ · em rota</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-[140px_1fr] items-center border-b border-divisor last:border-b-0">
+            <div class="p-4 font-mono text-sm">BT-02</div>
+            <div class="relative h-14">
+              <div class="viagem absolute top-3.5 h-7 flex items-center px-2 rounded border text-xs font-bold whitespace-nowrap overflow-hidden bg-atencao-fundo border-atencao-ponto text-atencao-tinta ponto gap-1.5 [--ponto:#F5B301]" style="--inicio: 27%; --duracao: 24%">7 m³ · 82 min na obra</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-[140px_1fr] items-center border-b border-divisor last:border-b-0">
+            <div class="p-4 font-mono text-sm">BT-03</div>
+            <div class="relative h-14">
+              <div class="viagem absolute top-3.5 h-7 flex items-center px-2 rounded border text-xs font-bold whitespace-nowrap overflow-hidden bg-ok-fundo border-ok-ponto text-ok-tinta" style="--inicio: 8%; --duracao: 17%">6 m³ · entregue</div>
+              <div class="viagem absolute top-3.5 h-7 flex items-center px-2 rounded border text-xs font-bold whitespace-nowrap overflow-hidden bg-neutro-fundo border-neutro-ponto border-dashed text-neutro-tinta" style="--inicio: 62%; --duracao: 20%">8 m³ · programado</div>
+            </div>
+          </div>
+          <div class="grid grid-cols-[140px_1fr] items-center border-b border-divisor last:border-b-0">
+            <div class="p-4 font-mono text-sm">BT-04</div>
+            <div class="relative h-14">
+              <div class="viagem absolute top-3.5 h-7 flex items-center px-2 rounded border text-xs font-bold whitespace-nowrap overflow-hidden bg-erro-fundo border-erro-ponto text-erro-tinta" style="--inicio: 40%; --duracao: 18%">Bloqueado · CNH vencida</div>
+              <div class="absolute inset-y-0 w-0.5 bg-verde" style="left: 46%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-5 text-sm text-secundario">
+        <span class="inline-flex items-center gap-2"><i class="w-2 h-2 rounded-full" style="background: #16794A"></i>Entregue</span>
+        <span class="inline-flex items-center gap-2"><i class="w-2 h-2 rounded-full" style="background: #1B62A8"></i>Em rota</span>
+        <span class="inline-flex items-center gap-2"><i class="w-2 h-2 rounded-full" style="background: #F5B301"></i>Perto dos 90 min</span>
+        <span class="inline-flex items-center gap-2"><i class="w-2 h-2 rounded-full" style="background: #B4332A"></i>Bloqueado</span>
+        <span class="inline-flex items-center gap-2"><i class="w-0.5 h-3.5 bg-verde"></i>Agora</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 md:py-[104px]">
+    <div class="max-w-site mx-auto px-6 grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,340px),1fr))]">
+      <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+        <div class="font-mono text-[13px] text-secundario">TRAÇO · REV. 03</div>
+        <h3 class="font-titulo font-semibold text-[22px]">Carta traço com histórico</h3>
+        <p class="text-secundario">Cada revisão da receita fica guardada. O romaneio sabe qual versão foi usada em cada carga.</p>
+      </article>
+      <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+        <div class="font-mono text-[13px] text-secundario">NF 31,8 t · BALANÇA 31,2 t</div>
+        <h3 class="font-titulo font-semibold text-[22px]">Recebimento na balança</h3>
+        <p class="text-secundario">O peso aferido é confrontado com o da nota do fornecedor, e a umidade é medida na chegada.</p>
+      </article>
+      <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+        <div class="font-mono text-[13px] text-secundario">CHEGADA · DESCARGA · RETORNO</div>
+        <h3 class="font-titulo font-semibold text-[22px]">Motorista aponta no celular</h3>
+        <p class="text-secundario">Os marcos de tempo saem da obra, não da lembrança. A taxa de espera chega pronta para cobrar.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="py-[88px] bg-noite text-noite-tinta">
+    <div class="max-w-site mx-auto px-6 flex flex-wrap items-center justify-between gap-7">
+      <h2 class="font-titulo font-semibold text-[clamp(28px,3.2vw,40px)] leading-[1.12] tracking-[-0.02em] max-w-[16em] [text-wrap:balance]">Traga a planilha de cargas. A gente mostra ela no Planta.</h2>
+      <a href="index.html#contato" class="inline-flex items-center justify-center min-h-12 px-[22px] rounded-md font-bold bg-verde-btn text-white hover:bg-verde-tinta">Agendar conversa</a>
+    </div>
+  </section>
+
+  <footer class="bg-noite-rodape text-noite-sec border-t border-noite-div">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-10 pt-14 pb-10">
+      <div class="grid gap-8 grid-cols-2 md:grid-cols-4">
+        <div class="col-span-2 md:col-span-1"><a href="index.html" class="inline-block"><img src="assets/planta-lockup-escuro.svg" alt="Planta" width="173" height="44" class="block h-11 w-auto"></a></div>
+        <div>
+          <p class="mb-3 text-sm font-bold text-noite-tinta">Produto</p>
+          <ul class="flex flex-col gap-1 text-sm">
+            <li><a href="index.html#como" class="inline-flex items-center min-h-8 hover:text-white">Como é feito</a></li>
+            <li><a href="index.html#ramos" class="inline-flex items-center min-h-8 hover:text-white">Ramos</a></li>
+            <li><a href="index.html#contato" class="inline-flex items-center min-h-8 hover:text-white">Agendar conversa</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-3 text-sm font-bold text-noite-tinta">Ramos</p>
+          <ul class="flex flex-col gap-1 text-sm">
+            <li><a href="concreteiras.html" class="inline-flex items-center min-h-8 hover:text-white">Para concreteiras</a></li>
+            <li><a href="serrarias.html" class="inline-flex items-center min-h-8 hover:text-white">Para serrarias</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-3 text-sm font-bold text-noite-tinta">Empresa</p>
+          <ul class="flex flex-col gap-1 text-sm">
+            <li><a href="https://setbox.com.br" target="_blank" rel="noopener" class="inline-flex items-center min-h-8 hover:text-white">Setbox</a></li>
+            <li><a href="mailto:contato@setbox.com.br" class="inline-flex items-center min-h-8 hover:text-white">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-6 border-t border-noite-div">
+        <a href="https://setbox.com.br" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 min-h-11 text-[13px] hover:text-white self-start md:self-auto">Um produto <img src="assets/setbox-lockup-escuro.svg" alt="Setbox" width="68" height="20" class="block h-5 w-auto"></a>
+        <p class="text-[13px] leading-[1.7] md:text-right">© 2026 Setbox Serviços Digitais · SETBOX INFORMATICA LTDA · CNPJ <span class="font-mono text-xs">08.889.601/0001-09</span><br>Av. Carneiro Leão, 563 - Zona 01, Maringá / PR - 87014-010</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>
