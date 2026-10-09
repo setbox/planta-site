@@ -53,6 +53,7 @@
         <a href="index.html" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde">Produto</a>
         <a href="concreteiras.html" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde" aria-current="page">Concreteira</a>
         <a href="serrarias.html" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity aria-[current=page]:pb-1 aria-[current=page]:border-b-2 aria-[current=page]:border-verde">Serraria</a>
+        <a href="https://planta.app.br/users/log-in" class="hidden md:inline font-semibold text-[15px] hover:opacity-60 transition-opacity">Entrar</a>
         <button type="button" id="nav-toggle" class="md:hidden inline-flex items-center justify-center w-11 h-11" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect y="3" width="20" height="2" rx="1" fill="currentColor"/><rect y="9" width="20" height="2" rx="1" fill="currentColor"/><rect y="15" width="20" height="2" rx="1" fill="currentColor"/></svg>
         </button>
@@ -63,6 +64,7 @@
       <a href="index.html" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta">Produto</a>
       <a href="concreteiras.html" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta" aria-current="page">Concreteira</a>
       <a href="serrarias.html" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold aria-[current=page]:text-verde-tinta">Serraria</a>
+      <a href="https://planta.app.br/users/log-in" class="flex items-center min-h-12 border-b border-divisor last:border-b-0 text-grafite font-semibold">Entrar</a>
     </div>
   </nav>
 
@@ -81,11 +83,11 @@
         <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">Seis etapas, um registro só.</h2>
       </div>
       <ol class="grid grid-cols-[repeat(auto-fit,minmax(min(100%,180px),1fr))] border-t-2 border-grafite">
-        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E1</span><span class="font-titulo font-semibold text-[19px]">Orçamento</span><span class="text-[15px] text-secundario">No tablet, com preço calculado e margem mínima conferida.</span></li>
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E1</span><span class="font-titulo font-semibold text-[19px]">Orçamento</span><span class="text-[15px] text-secundario">Na obra, com preço pelo custo do traço e pela praça, e margem conferida.</span></li>
         <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E2</span><span class="font-titulo font-semibold text-[19px]">Pedido</span><span class="text-[15px] text-secundario">Congela as condições aceitas e controla o saldo a entregar.</span></li>
         <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E3</span><span class="font-titulo font-semibold text-[19px]">Programação</span><span class="text-[15px] text-secundario">Divide o volume em viagens pela capacidade de cada caminhão.</span></li>
         <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E4</span><span class="font-titulo font-semibold text-[19px]">Dosagem</span><span class="text-[15px] text-secundario">Traço versionado, corrigido pela umidade medida no dia.</span></li>
-        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E5</span><span class="font-titulo font-semibold text-[19px]">Romaneio</span><span class="text-[15px] text-secundario">Pesos efetivos e hora de saída carimbados na emissão.</span></li>
+        <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E5</span><span class="font-titulo font-semibold text-[19px]">Romaneio</span><span class="text-[15px] text-secundario">Quantidades efetivas na emissão; a hora de saída é registrada quando o caminhão sai.</span></li>
         <li class="flex flex-col gap-2.5 pt-5 pr-5 pb-6 border-b border-divisor"><span class="font-mono text-[13px] font-semibold text-verde-tinta">E6</span><span class="font-titulo font-semibold text-[19px]">Nota fiscal</span><span class="text-[15px] text-secundario">Fatura o volume entregue, produto e serviço separados.</span></li>
       </ol>
     </div>
@@ -188,22 +190,68 @@
     </div>
   </section>
 
+  <section id="preco" class="py-20 md:py-[104px] bg-superficie border-y border-divisor">
+    <div class="max-w-site mx-auto px-6 flex flex-col gap-12">
+      <div class="flex flex-col gap-[18px] max-w-[760px]">
+        <div class="flex items-center gap-4"><span class="font-mono text-[13px] font-semibold text-verde-tinta">04</span><span class="faixa"></span><span class="text-xs font-bold tracking-[0.14em] uppercase text-secundario">O preço que a usina pratica</span></div>
+        <h2 class="font-titulo font-semibold text-[clamp(32px,3.6vw,46px)] leading-[1.1] tracking-[-0.02em] [text-wrap:balance]">As regras de cobrança do setor, prontas.</h2>
+        <p class="text-lg text-secundario">Concreteira não vende só m³. Vende bomba, carga pequena, sábado e espera. O Planta já conhece essas cobranças e monta a proposta com elas.</p>
+      </div>
+      <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,260px),1fr))]">
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+          <h3 class="font-titulo font-semibold text-[21px]">Preço que nasce do custo</h3>
+          <p class="text-secundario">O m³ de cada FCK sai do custo do traço vigente e do diesel até cada praça atendida, com a sua composição de impostos e margem. Mudou o cimento, a tabela acompanha.</p>
+          <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">TRAÇO + DIESEL DA PRAÇA × BDI</div>
+        </article>
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+          <h3 class="font-titulo font-semibold text-[21px]">Bomba por faixa de volume</h3>
+          <p class="text-secundario">Cada faixa com preço por m³ ou valor fechado, como a usina já cobra. Bombeado total ou parcial, com o volume que de fato passou pela bomba.</p>
+          <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">3 A 4 m³ · 9 A 16 m³ · ACIMA DE 40 m³</div>
+        </article>
+        <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+          <h3 class="font-titulo font-semibold text-[21px]">Taxas que não ficam para trás</h3>
+          <p class="text-secundario">Taxa de entrega de carga pequena, mistura mínima e adicional de fim de semana entram na proposta sozinhas, pela data e pelo volume de cada carga.</p>
+          <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">CARGA &lt; 7 m³ · SÁBADO · FERIADO</div>
+        </article>
+      </div>
+      <div class="flex flex-col md:flex-row gap-6 md:items-center p-7 rounded-lg bg-grafite text-noite-tinta">
+        <div class="font-mono text-sm shrink-0"><span class="text-contorno line-through">=SOMASES(Base!E:E; ...)</span><br><span class="text-[#F5B301]">areia = 250 kg/m³ ?</span></div>
+        <p class="text-noite-lead">Planilha boa chega no limite dela. Uma referência que escorrega uma célula e o romaneio passa a mandar a areia errada, sem ninguém perceber até a carga sair. No Planta, o traço é um só, versionado, e o mesmo número vai para o orçamento, a dosagem e o romaneio.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="py-20 md:py-[104px]">
     <div class="max-w-site mx-auto px-6 grid gap-4 grid-cols-[repeat(auto-fit,minmax(min(100%,340px),1fr))]">
       <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
-        <div class="font-mono text-[13px] text-secundario">TRAÇO · REV. 03</div>
         <h3 class="font-titulo font-semibold text-[22px]">Carta traço com histórico</h3>
         <p class="text-secundario">Cada revisão da receita fica guardada. O romaneio sabe qual versão foi usada em cada carga.</p>
+        <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">TRAÇO · REV. 03</div>
       </article>
       <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
-        <div class="font-mono text-[13px] text-secundario">NF 31,8 t · BALANÇA 31,2 t</div>
         <h3 class="font-titulo font-semibold text-[22px]">Recebimento na balança</h3>
         <p class="text-secundario">O peso aferido é confrontado com o da nota do fornecedor, e a umidade é medida na chegada.</p>
+        <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">NF 31,8 t · BALANÇA 31,2 t</div>
       </article>
       <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
-        <div class="font-mono text-[13px] text-secundario">CHEGADA · DESCARGA · RETORNO</div>
         <h3 class="font-titulo font-semibold text-[22px]">Motorista aponta no celular</h3>
         <p class="text-secundario">Os marcos de tempo saem da obra, não da lembrança. A taxa de espera chega pronta para cobrar.</p>
+        <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">CHEGADA · DESCARGA · RETORNO</div>
+      </article>
+      <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+        <h3 class="font-titulo font-semibold text-[22px]">O traço sabe quanto tempo aguenta</h3>
+        <p class="text-secundario">Cada traço guarda a curva de perda de abatimento. A programação avisa quando a obra está longe demais, e a carga que passa do limite vira perda registrada, com causa.</p>
+        <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">0 MIN 100 mm · 60 MIN 55 mm · 90 MIN 30 mm</div>
+      </article>
+      <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+        <h3 class="font-titulo font-semibold text-[22px]">Central parada avisa a agenda</h3>
+        <p class="text-secundario">Central dosadora, betoneira e bomba com manutenção preventiva e histórico próprio. Se a central para, a programação daquela usina fica sabendo na hora.</p>
+        <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">CENTRAL U-01 · EM MANUTENÇÃO</div>
+      </article>
+      <article class="flex flex-col gap-3.5 p-7 border border-divisor rounded-lg bg-white">
+        <h3 class="font-titulo font-semibold text-[22px]">Ficha de EPI sem papel</h3>
+        <p class="text-secundario">Entrega de equipamento de proteção com CA conferido e confirmação do funcionário. A ficha de cada um sai pronta para a fiscalização.</p>
+        <div class="mt-auto pt-2 font-mono text-[13px] text-secundario">LUVA · CA 12.345 · ENTREGUE 09/10</div>
       </article>
     </div>
   </section>
